@@ -11,7 +11,7 @@ export class WeatherService {
 
   private londonUrl: string = 'https://www.metaweather.com/api/location/44418/';
 
-  private barcelonaUrl: string = 'https://www.metaweather.com/api/location/44418/';
+  private barcelonaUrl: string = 'https://www.metaweather.com/api/location/753692/';
 
   private tokyoUrl: string = 'https://www.metaweather.com/api/location/44418/';
 
