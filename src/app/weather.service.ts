@@ -9,11 +9,11 @@ import { Weather } from './models/weather';
 })
 export class WeatherService {
 
-  private londonUrl: string = 'https://weather-angular-yilinng.vercel.app/london/';
+  private londonUrl: string = 'https://www.metaweather.com/api/location/44418/';
 
-  private barcelonaUrl: string = 'https://weather-angular-yilinng.vercel.app/barcelona/';
+  private barcelonaUrl: string = 'https://www.metaweather.com/api/location/44418/';
 
-  private tokyoUrl: string = 'https://weather-angular-yilinng.vercel.app/tokyo/';
+  private tokyoUrl: string = 'https://www.metaweather.com/api/location/44418/';
 
   private testUrl: string = 'https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/2487956/';
 
