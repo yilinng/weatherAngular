@@ -1,0 +1,57 @@
+<div class="sideBar" *ngIf="!showBar">
+    <div class="side" *ngFor="let weather of todayWeather">
+        <div class="searchbtn">
+            <button (click)="showSearch()">search for location</button>
+            <i class="far fa-compass"></i>
+        </div>
+        <div class="secendimg">
+            <div class="imgtype">
+                <img src='{{"./assets/" + weather.weather_state_name + ".png" }}'
+                alt="{{ weather.weather_state_name }}">
+            </div>
+        </div>
+        <div class="temperature">
+            <span>{{weather.the_temp| number: '1.0-0'}}&#8451;</span>
+        </div>
+        <div class="type">
+            <span>{{weather.weather_state_name}}</span>
+        </div>
+        <div class="time">
+            <span>Today</span>
+            <span>&nbsp;.&nbsp;</span>
+            <span>{{weather.applicable_date | date }}</span>
+        </div>
+        <div class="location">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>&nbsp;{{ location }}</span>
+        </div>
+    </div>
+</div>
+
+<!-- clickbtn and show search-->
+<div class="sideBar" *ngIf="showBar">
+    <div class="side">
+            <div class="cross" (click)="closeBar()">
+                <i class="fas fa-times"></i>
+            </div>
+            <div class="search">
+                <form (ngSubmit)="onSearch()">
+                    <i class="fas fa-search"></i>
+                    <input class="inputText" name="name" [(ngModel)]="inputName" type="text" placeholder="search location...">
+                    <input type="submit" value="Search" class="search-submit" />
+                </form>
+            </div>
+
+            <div class="lists" *ngFor="let weather of weathersSelected">
+                    <div class="list {{ (weather.clicked ? 'active' : '') }}"
+                    (click)="clickThis(weather)">
+                        <div class="content">
+                            <span>{{ weather.location }}</span>
+                        </div>
+                        <div class="icon" *ngIf="weather.clicked">
+                            <i class="fas fa-chevron-right"></i>
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>

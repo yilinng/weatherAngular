@@ -1,0 +1,259 @@
+.content {
+    height: 100%;
+    width: 920px;
+    display: flex;
+    flex-direction: column;
+    background-color: #000018;
+    color: white;
+    padding-bottom: 10px;
+    padding-right: 5px;
+}
+
+.temBtn{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
+.temBtn button {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+}
+
+ button .tranf {
+    background-color: #eee;
+    color: black;
+}
+
+.week {
+    display: flex;
+    justify-content: space-around;
+}
+
+.week .wek {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    background-color: #808080;
+    border-style: none;
+    margin: 20px auto;
+    padding: 5px;
+}
+
+.wek .time  span{
+    font-size: 16px;
+}
+
+.wek img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.wek .temp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wek .temp span {
+    font-size: 15px;
+    margin: 0 5px;
+}
+
+.timeTopic{
+    font-size: 18px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px;
+
+}
+
+.text .col1 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.text .col2 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.wind {
+    display: flex;
+    flex-direction: column;
+    background-color: #707070;
+    width: 250px;
+    height: 120px;
+    margin: 10px 0px;
+    border: 20px solid none;
+
+}
+
+.wind .name {
+    font-size: 20px;
+}
+
+.wind .number {
+    font-size: 25px;
+}
+
+.wind1 .name {
+    font-size: 20px;
+}
+
+.wind1 .number {
+    font-size: 25px;
+}
+
+.wind1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #707070;
+    width: 250px;
+    height: 100px;
+    margin: 10px 0px;
+    border: 20px solid none;
+}
+
+
+.wind span {
+    margin: auto;
+}
+
+
+    .NNE { transform: rotate(22.5deg); }
+    .NE { transform: rotate(45deg); }
+    .ENE { transform: rotate(67.5deg); }
+    .E { transform: rotate(90deg); }
+    .ESE { transform: rotate(112.5deg); }
+    .SE { transform: rotate(135deg); }
+    .SSE { transform: rotate(157.5deg); }
+    .S { transform: rotate(180deg); }
+    .SSW { transform: rotate(202.5deg); }
+    .SW { transform: rotate(-135deg); }
+    .WSW { transform: rotate(-114.5deg); }
+    .W { transform: rotate(-90deg); }
+    .WNW { transform: rotate(-69.5deg); }
+    .NW { transform: rotate(-45deg); }
+    .NNW { transform: rotate(-24.5deg);}
+
+
+.wind1 span {
+    margin: auto;
+}
+
+.footer {
+    margin: auto;
+}
+
+.footer span {
+    text-align: center;
+    font-size: 15px;
+}
+
+.footer .link {
+    font-size: 12px;
+}
+
+@media only screen and (max-width: 600px) {
+    .content {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #00003E;
+    color: white;
+    }
+
+    .week {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto;
+    grid-gap: 10px;
+}
+
+.week .wek {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid;
+    background-color: #707070;
+    border-style: none;
+    margin: auto;
+    padding: 5px;
+}
+
+.wek .time  span{
+    font-size: 16px;
+}
+
+.wek img {
+    width: 70px;
+    height: 70px;
+    margin: 5px;
+}
+
+.wek .temp {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wek .temp span {
+    font-size: 15px;
+    margin: 0 5px;
+    }
+
+  .timeTopic{
+    font-size: 18px;
+    margin: 10px auto;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0px;
+
+}
+
+.text .col1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.text .col2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.wind {
+    display: flex;
+    flex-direction: column;
+    background-color: #707070;
+    width: 100%;
+    height: 120px;
+    margin: 10px auto;
+    border: 20px solid none;
+
+}
+
+.wind1 {
+    display: flex;
+    flex-direction: column;
+    background-color: #707070;
+    width: 100%;
+    height: 100px;
+    margin: 10px auto;
+    border: 20px solid none;
+}
+}

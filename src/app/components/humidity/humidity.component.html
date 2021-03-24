@@ -1,0 +1,16 @@
+<div class="allHum">
+
+    <div class="numberlist">
+        <span>0</span>
+        <span>50</span>
+        <span>100</span>
+
+    </div>
+
+    <div class="bordered">
+        <div class="innerborder {{weather.humidity | number: '1.0-0'}}"
+         [ngStyle]="{'width': finalWidth + 'px' }">
+        </div>
+    </div>
+</div>
+

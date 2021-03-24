@@ -1,0 +1,44 @@
+.allHum {
+    margin: 10px 30px;
+}
+
+@keyframes slideInFromLeft {
+   from {
+    width: 0%;
+    }
+    to {
+    width: finalWidth + 'px' ;
+    }
+}
+
+.numberlist {
+    display: flex;
+    justify-content: space-between;
+    width: 200px;
+}
+
+.bordered {
+    background-color: #eee;
+    width: 200px;
+    height: 14px;
+    border-radius: 10px;
+    border-color: white;
+}
+
+.innerborder {
+    /* This section calls the slideInFromLeft animation we defined above */
+    animation: slideInFromLeft 1s;
+    background-color: yellow;
+    height: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+    .allHum {
+    margin: 10px 70px;
+}
+
+}

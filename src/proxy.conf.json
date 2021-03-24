@@ -1,0 +1,34 @@
+{
+    "/london": {
+      "target": "https://www.metaweather.com/api/location/44418",
+      "secure": false,
+      "changeOrigin": true,
+        "pathRewrite": {
+          "^/london": ""
+        }
+    },
+    "/barcelona": {
+      "target": "https://www.metaweather.com/api/location/753692",
+      "secure": false,
+      "changeOrigin": true,
+        "pathRewrite": {
+          "^/barcelona": ""
+        }
+    },
+    "/tokyo": {
+      "target": "https://www.metaweather.com/api/location/1118370",
+      "secure": false,
+      "changeOrigin": true,
+        "pathRewrite": {
+          "^/tokyo": ""
+        }
+    },
+    "/api": {
+      "target": "https://www.metaweather.com/api/location",
+      "secure": false,
+      "changeOrigin": true,
+        "pathRewrite": {
+          "^/api": ""
+        }
+    }
+}

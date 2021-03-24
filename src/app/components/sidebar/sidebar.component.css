@@ -1,0 +1,192 @@
+.side {
+    background-color: #808080;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 410px;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+
+.side div {
+    margin-top: 20px;
+}
+
+
+.type {
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+.time {
+    margin: 0 auto;
+}
+
+.searchbtn {
+    display: flex;
+    justify-content: space-around;
+}
+
+.searchbtn button {
+    background-color: #b5b5b5;
+    padding: 5px;
+    color: white;
+}
+
+
+.secendimg {
+    background-image: url('../../../assets/Cloud-background.png');
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: contain, cover;
+}
+
+
+.imgtype  img{
+    width:120px;
+    height: 120px;
+    margin-left: 150px;
+}
+
+.temperature{
+    margin: auto;
+    font-size: 60px;
+}
+
+.location{
+   margin: auto;
+   display: flex;
+   justify-content: space-between;
+}
+
+.sideBar {
+    height: 100%;
+}
+
+
+.search .fas {
+    position: absolute;
+    margin-top:10px;
+    margin-left: 38px;
+    color: #eee;
+}
+
+.search .inputText {
+    width:230px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    margin-left: 35px;
+}
+
+.search .search-submit {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-weight:bold;
+}
+
+.cross {
+    position: absolute;
+    margin-left: 380px;
+}
+
+.lists {
+    list-style-type: none;
+    margin: 10px auto;
+}
+
+.list {
+    cursor: pointer;
+    font-size: 20px;
+
+ }
+
+.active {
+    display: flex;
+    justify-content: space-around;
+    width: 250px;
+    height: 40px;
+    border: 2px solid white;
+    padding: 10px 0px 20px 10px;
+    }
+
+
+@media only screen and (max-width: 600px) {
+  .side {
+    background-color: #707070;
+    display: flex;
+    flex-direction: column;
+    height: 630px;
+    width: auto;
+    color: white;
+    padding: 15px;
+  }
+
+  .side div {
+    margin-top: 20px;
+    }
+
+    .cross {
+        position: absolute;
+        right: 0;
+        margin-right: 15px;
+    }
+
+    .imgtype  img{
+    width:120px;
+    height: 120px;
+    margin-left: 100px;
+}
+
+    .search .fas {
+    margin: 10px 6px;
+    color: #eee;
+}
+
+.search .inputText {
+    width:230px;
+    margin: auto;
+}
+
+.search .search-submit {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+    font-weight:bold;
+}
+
+.temperature {
+    margin: auto;
+}
+
+.type {
+    margin: 0 auto;
+}
+
+.time {
+    margin: 0 auto;
+}
+
+.lists {
+    list-style-type: none;
+    margin: 0 auto;
+}
+
+.list {
+    cursor: pointer;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+ }
+
+.active {
+    width: 250px;
+    height: auto;
+    border: 2px solid white;
+    margin: 10px auto;
+    }
+
+}

@@ -1,0 +1,76 @@
+<div class="content" *ngIf="isLoading">
+    <div class="temBtn">
+        <button class="tranc">&#8451;</button>
+        <button class="tranf" (click)="temperatureConverter()">&#8457;</button>
+    </div>
+    <div class="week">
+        <div class="wek" *ngFor="let weather of filterWeathers">
+            <div class="time">
+                <span>{{weather.applicable_date | date }}</span>
+            </div>
+            <div class="image">
+                <img src='{{"./assets/" + weather.weather_state_name + ".png" }}' alt="{{weather.weather_state_name}}">
+            </div>
+            <div class="temp" *ngIf="totranf">
+                <span>{{ weather.max_temp | number: '1.0-0' }}&#8451;</span>
+                <span>{{ weather.min_temp | number: '1.0-0' }}&#8451;</span>
+            </div>
+
+            <div class="temp" *ngIf="!totranf">
+                <span>{{ (weather.max_temp*1.8) +32 | number: '1.0-0' }}&#8457;</span>
+                <span>{{ (weather.min_temp*1.8) +32 | number: '1.0-0' }}&#8457;</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="timeTopic">
+        <span>Today's hightlights</span>
+    </div>
+
+    <div class="text" *ngFor="let weather of todayWeather">
+        <div class="col1">
+
+        <div class="wind">
+            <span class="name">Wind status</span>
+            <span class="number">{{ weather.wind_speed | number: '1.0-0'}}mph</span>
+            <span>
+                <i class="far fa-arrow-alt-circle-up {{ weather.wind_direction_compass }}"></i>
+                <span>
+                    {{ weather.wind_direction_compass }}
+                </span>
+            </span>
+        </div>
+
+        <div class="wind">
+            <span class="name">Humidity</span>
+            <span class="number">{{weather.humidity | number: '1.0-0'}}%</span>
+            <app-humidity [weather]="weather">
+            </app-humidity>
+        </div>
+        </div>
+
+        <div class="col2">
+
+        <div class="wind1">
+            <span class="name">Visibility</span>
+            <span class="number">{{weather.visibility| number: '1.0-0'}}miles</span>
+        </div>
+
+        <div class="wind1">
+            <span class="name">Pressure</span>
+            <span class="number">{{weather.air_pressure | number: '1.0-0'}}mb</span>
+        </div>
+        </div>
+
+    </div>
+    <div class="footer">
+        <span>Your project name</span>
+        <div class="link">
+        Solution for a challenge from  <a href="http://devchallenges.io" target="_blank">Devchallenges.io</a>.
+        </div>
+    </div>
+</div>
+
+<div class="content" *ngIf="!isLoading">
+    <app-spinner></app-spinner>
+</div>
