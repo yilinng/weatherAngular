@@ -9,11 +9,11 @@ import { Weather } from './models/weather';
 })
 export class WeatherService {
 
-  private londonUrl: string = 'https://www.metaweather.com/api/location/44418/';
+  private londonUrl: string = 'api/';
 
-  private barcelonaUrl: string = 'https://www.metaweather.com/api/location/753692/';
+  private barcelonaUrl: string = 'api/';
 
-  private tokyoUrl: string = 'https://www.metaweather.com/api/location/44418/';
+  private tokyoUrl: string = 'api/';
 
   private testUrl: string = 'https://cors-anywhere.herokuapp.com/https://www.metaweather.com/api/location/2487956/';
 
